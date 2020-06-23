@@ -1,4 +1,4 @@
-import { styled, withStyles } from "@material-ui/core/styles";
+import { styled } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { spacing, sizing, compose } from "@material-ui/system";
 
@@ -8,9 +8,9 @@ const MyButton = styled(Button)(compose(spacing, sizing));
 
 // Not working
 // const MyButton = styled(Button)((props) => ({
-//   ...compose(sizing)(props)
-// }));
-
+//   backgroundColor: 'red',
+//   ...compose(spacing, sizing)(props)
+// }))
 
 
 export default MyButton;
